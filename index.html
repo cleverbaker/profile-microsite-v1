@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>The ”blur-up” technique</title>
+    
+    
+    <style type="text/css">
+      
+.post-header {
+  overflow: hidden;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 54.5vw;
+  margin: 0 auto;
+  background-color: #567DA7;
+  background-size: cover;
+  background-position: 49% 0;
+  background-image: url(data:image/jpg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAA9AAD/4QN0aHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjUtYzAxNCA3OS4xNTE0ODEsIDIwMTMvMDMvMTMtMTI6MDk6MTUgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6ZjViY2EyMGYtN2QwNC00OWY4LWEzODAtMWRlZmFlYzQ1NzRmIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkFGMzdENTdBMjA2MDExRTY4MjREQkZDOEQzQzI5ODBGIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkFGMzdENTc5MjA2MDExRTY4MjREQkZDOEQzQzI5ODBGIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAoTWFjaW50b3NoKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjU0RjQ3QjZDRTg3RTExRTU4RENDQjgzOTk4NTU2NkM3IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU0RjQ3QjZERTg3RTExRTU4RENDQjgzOTk4NTU2NkM3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/+4AJkFkb2JlAGTAAAAAAQMAFQQDBgoNAAAFPwAABYUAAAXdAAAGOP/bAIQABgQEBAUEBgUFBgkGBQYJCggGBggKDAoKCgoKDA8MDAwMDAwPDA4ODw4ODBISFBQSEhoaGhoaHh4eHh4eHh4eHgEHBwcMCwwXDw8XGhQRFBoeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4e/8IAEQgAEAAPAwERAAIRAQMRAf/EAI0AAQEBAAAAAAAAAAAAAAAAAAUEBgEBAQEAAAAAAAAAAAAAAAAAAwIBEAABBAMAAAAAAAAAAAAAAAAEAQIDBQAQQREAAgEDBAMAAAAAAAAAAAAAAQIDABESITFBUSJiBBIBAAAAAAAAAAAAAAAAAAAAIBMBAAMBAQEBAQAAAAAAAAAAAQARMSFBgVFh/9oADAMBAAIRAxEAAAHXBYFUeW3Kf//aAAgBAQABBQK1KbELVlRurLGdDSWBwCyf/9oACAECAAEFAnLruf/aAAgBAwABBQJM7r//2gAIAQICBj8CH//aAAgBAwIGPwIf/9oACAEBAQY/AnS5Ekmgx31r7IS7HAOygk5YW73opGbeYAPryxoKj5Rzh45D1kK//9oACAEBAwE/IaswL1C3afGshIx4QTtLev7OO+kuq8BoRKtKhvB55P/aAAgBAgMBPyHwgcm2gE//2gAIAQMDAT8h3cUg4VEn/9oADAMBAAIRAxEAABDjn//aAAgBAQMBPxAKKLogC1S/HZcgTc/AhWNnkv8AkqpVhK3U7P3xzQArt/3Gf//aAAgBAgMBPxAqrr35EFnT5kbtHHIK2/J//9oACAEDAwE/ECUWRprLjVH2Jyf/2Q==);
+}
+
+
+.post-header-enhanced {
+  background-image: url(hero2.jpg);
+}
+
+@supports (background-image: filter(url('i.jpg'), blur(1px))) {
+  .post-header {
+    transform: translateZ(0);
+  }
+  .post-header-enhanced {
+    animation: sharpen .5s both;
+  }
+  @keyframes sharpen {
+    from {
+      background-image: filter(url(hero2.jpg), blur(20px));
+    }
+    to {
+      background-image: filter(url(hero2.jpg), blur(0px));
+    }
+  }
+}
+    </style>
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <header class="post-header">
+    <span class="wrapper">
+      <img src="img/prof.jpg" class="prof">
+      </span>
+  <h1 class="post-title">A walk in the woods in Einsteins brains.</h1>
+</header>
+
+
+<div class="post-body">
+  <p class="post-lede">In July, we went for a walk from the Brösarp hills and out to the coast near Kivik. It was one of the most beautiful days of the summer.</p>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam laudantium eos minima dolor asperiores maxime voluptas itaque iure nostrum quos ipsam aliquam quasi amet repudiandae totam, vel, veniam sit repellat.</p>
+
+  <p>Cum, quibusdam explicabo odit ut voluptatem a, sint ea vel inventore. Earum fugit architecto voluptatem itaque dolorum modi, ipsam, aliquid quod aliquam. Assumenda magnam dolorum quisquam optio dicta ex ipsum ipsa quos, nulla quas eaque, modi fugit
+    provident iusto, blanditiis quod dignissimos. Doloribus, natus.</p>
+
+  <p>Perspiciatis hic architecto assumenda quod sit praesentium iure nihil, similique sapiente consequuntur modi dolorum eaque, tenetur sequi perferendis enim, veritatis earum vitae. Veritatis iure nihil perspiciatis, aspernatur reiciendis, esse quia porro
+    fuga velit error tenetur quod voluptates recusandae quae provident beatae! Accusamus, ipsum, dolore.</p>
+
+  <p>Commodi nulla, minus repellendus dolores enim eveniet veritatis facere ipsam nemo officia. Culpa veniam a, aperiam at. Consequuntur ducimus mollitia distinctio, perspiciatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, cum, vel. Voluptates
+    sapiente ipsam error soluta nemo neque nulla tenetur aspernatur consequatur saepe incidunt atque, non, ab nihil similique repudiandae.</p>
+</div>
+    
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
