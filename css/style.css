@@ -42,7 +42,7 @@ figure {
   font-family: Avenir Next, SegoeUI, Franklin Gothic, arial, sans-serif;
   text-align: center;
   text-shadow: 0 0 .5em rgba(0, 0, 0, 0.6);
-  font-size: calc(1em + 2vw);
+  font-size: calc(1em + 1.61vw);
   margin: auto auto 23vw;
   padding: .5em;
   color: #fff;
@@ -59,8 +59,8 @@ figure {
     -moz-box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
     box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
 
-    width: 14rem;
-    height: 14rem;
+    width: 9rem;
+    height: 9rem;
     display: inline-block;
     margin: 1rem;
     left: 0;
@@ -69,7 +69,11 @@ figure {
 }
 
 .wrapper {
-  width: 100%;
+  font-size: 1.4rem;
+  max-width: 39rem;
+  text-align: left;
+  margin: 1rem auto;
+
   overflow: auto;
   text-align: center;
   display: block;
